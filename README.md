@@ -1,3 +1,0 @@
-# ADVANCED GROUP
-
-bla bla
