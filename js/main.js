@@ -112,22 +112,31 @@ jQuery(document).ready(function( $ ) {
 
 
   // Porfolio - uses the magnific popup jQuery plugin
-  $('.portfolio-popup').magnificPopup({
-    type: 'image',
-    removalDelay: 300,
-    mainClass: 'mfp-fade',
-    gallery: {
-      enabled: true
-    },
-    zoom: {
-      enabled: true,
-      duration: 300,
-      easing: 'ease-in-out',
-      opener: function(openerElement) {
-        return openerElement.is('img') ? openerElement : openerElement.find('img');
-      }
-    }
-  });
+//  $('.portfolio-popup').magnificPopup({
+//    type: 'image',
+ //    removalDelay: 300,
+ //    mainClass: 'mfp-fade',
+//     gallery: {
+ //      enabled: true
+ //    },
+ //    zoom: {
+//       enabled: true,
+ //      duration: 300,
+//       easing: 'ease-in-out',
+  //     opener: function(openerElement) {
+ //        return openerElement.is('img') ? openerElement : openerElement.find('img');
+//       }
+//     }
+//  });
+
+  // Portfolio – popup inline con immagine + link
+$('.portfolio-popup').magnificPopup({
+  type: 'inline',     // usiamo il contenuto inline
+  midClick: true,     // apre anche con click centrale
+  removalDelay: 300,
+  mainClass: 'mfp-fade'
+});
+
 
   // Testimonials carousel (uses the Owl Carousel library)
   $(".testimonials-carousel").owlCarousel({
